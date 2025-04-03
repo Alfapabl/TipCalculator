@@ -1,50 +1,29 @@
-# React + TypeScript + Vite
+# Order Management System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern order management system built with **React.js**, **Tailwind CSS**, and **TypeScript**. This application streamlines order processing with a clean and intuitive interface.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Add Multiple Orders:** Easily add as many orders as needed.
+- **Include a Tip for Each Order:** Customize each order by adding a tip.
+- **Automatic Total Calculation:** Totals are automatically computed for accuracy.
+- **Reset Orders:** Quickly clear all orders to start fresh.
 
-## Expanding the ESLint configuration
+## Upcoming Features
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **Database Integration:** Future releases will include connecting the project to a database for persistent data storage, ensuring that your data is saved between sessions.
 
-- Configure the top-level `parserOptions` property like this:
+## Technologies Used
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- **React.js:** For building the user interface.
+- **Tailwind CSS:** For fast and efficient styling.
+- **TypeScript:** For a more robust, error-resistant codebase.
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## Getting Started
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+1. **Clone the Repository:**
+   ```bash
+   git clone https://github.com/your-username/order-management-system.git
+cd order-management-system
+npm install
+npm start
